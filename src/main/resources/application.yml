@@ -1,0 +1,22 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: log
+
+logging:
+  level:
+    root: WARN
+    com.cooperzhu: INFO
+  file:
+    path: /opt
+
+userconfig:
+  aliyun:
+    dns:
+       domain: # domain, like: cooperzhu.com
+       access-key-id: xxxxx   # aliyun accessKeyId
+       access-key-secret: xxxxx  # aliyun accessKeySecret
+  task:
+    period: 30  # unit: min
